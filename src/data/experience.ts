@@ -2,14 +2,14 @@ import type { Experience } from "../types/content";
 export const experience: Experience[] = [
   {
     organization: "FPT Software",
-    role: "Enterprise Application / AI Engineering Intern",
+    role: "AI Engineer Intern",
     period: "Sep 2026 — Present",
     logo: "/research/fpt-software.png",
     summary:
       "Connecting enterprise applications with document AI and assisted workflows.",
     contributions: [
-      "Worked on OutSystems ODC workflows, data models, application logic, and API integrations for AI-assisted applications.",
-      "Explored Azure AI Document Intelligence custom extraction through document labeling, model training, and testing.",
+      "Contributed to enterprise applications in OutSystems ODC, working on business workflows, data models, application logic, and API integration for AI-assisted processes.",
+      "For structured field extraction from documents, labeled training data and explored custom model training and testing with Azure AI Document Intelligence.",
     ],
     tags: [
       "OutSystems ODC",
@@ -25,8 +25,9 @@ export const experience: Experience[] = [
     summary:
       "Building components for structured document reconstruction and OCR workflows.",
     contributions: [
-      "Developed layout-preserving OCR JSON → DOCX/HTML reconstruction and prepared Vietnamese datasets for VietOCR fine-tuning, evaluation, and error analysis.",
-      "Contributed to table-layout detection, distributed/asynchronous inference, and logging/monitoring with senior engineers using Docker, Redis, and RabbitMQ.",
+      "To turn OCR output into editable documents, developed post-processing modules that reconstruct DOCX and HTML from OCR JSON while preserving layout consistency.",
+      "Curated and preprocessed domain-specific Vietnamese document datasets for VietOCR fine-tuning, evaluation, and recognition-error analysis.",
+      "Supported distributed OCR inference with Redis, RabbitMQ, and Docker; built logging and monitoring components to track latency and system performance. Collaborated with senior engineers on table-layout detection and asynchronous processing.",
     ],
     tags: ["VietOCR", "Document reconstruction", "Docker", "Redis / RabbitMQ"],
   },

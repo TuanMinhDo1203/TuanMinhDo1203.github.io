@@ -61,8 +61,8 @@ test("research-first order and all core evidence are visible by default", async 
   await expect(page.locator(".honor-terms li")).toHaveCount(4);
   await expect(page.locator(".evaluation-axes > div")).toHaveCount(3);
   await expect(page.locator(".experience-body ul")).toHaveCount(2);
-  for (const list of await page.locator(".experience-body ul").all())
-    await expect(list.locator("li")).toHaveCount(2);
+  await expect(page.locator(".experience-body ul").nth(0).locator("li")).toHaveCount(2);
+  await expect(page.locator(".experience-body ul").nth(1).locator("li")).toHaveCount(3);
   await expect(
     page.locator("#publication-python-ocr .contribution-metrics"),
   ).toContainText("90.51%");
