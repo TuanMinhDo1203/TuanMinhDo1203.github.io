@@ -1,0 +1,172 @@
+[
+  {
+    "id": "python-ocr",
+    "doi": "10.1007/978-981-92-5699-0_20",
+    "officialTitle": "Recognition of Handwritten Python Code in Academic Exam Settings Using a Multi-stage OCR Pipeline",
+    "authors": [
+      {
+        "name": "Tuan-Minh Do",
+        "isOwner": true
+      },
+      {
+        "name": "Cong-Tam Phan"
+      },
+      {
+        "name": "Hoang-Phuc Mai"
+      },
+      {
+        "name": "Ngoc-Bao-Quang Nguyen"
+      },
+      {
+        "name": "Cao Vu Bui"
+      }
+    ],
+    "source": "https://doi.org/10.1007/978-981-92-5699-0_20",
+    "publishedDate": "2026-09-26",
+    "verifiedOn": "2026-10-30"
+  },
+  {
+    "id": "cpga-stable",
+    "doi": "10.1007/978-981-92-6513-8_12",
+    "officialTitle": "CPGA-Stable: Improving Optimization Stability in Physics-Inspired Low-Light Image Enhancement",
+    "authors": [
+      {
+        "name": "Tuan-Minh Do",
+        "isOwner": true
+      },
+      {
+        "name": "Hoang-Phuc Mai"
+      },
+      {
+        "name": "Cong-Tam Phan"
+      },
+      {
+        "name": "Thi-Thu-Hong Phan"
+      }
+    ],
+    "source": "https://doi.org/10.1007/978-981-92-6513-8_12",
+    "publishedDate": "2026-10-09",
+    "verifiedOn": "2026-10-30"
+  },
+  {
+    "id": "waste-classification",
+    "doi": "10.1016/j.asej.2026.104062",
+    "officialTitle": "Towards accurate and efficient waste image classification: A hybrid deep learning and machine learning approach",
+    "authors": [
+      {
+        "name": "Ngoc-Bao-Quang Nguyen"
+      },
+      {
+        "name": "Tuan-Minh Do",
+        "isOwner": true
+      },
+      {
+        "name": "Cong-Tam Phan"
+      },
+      {
+        "name": "Thi-Thu-Hong Phan"
+      }
+    ],
+    "source": "https://doi.org/10.1016/j.asej.2026.104062",
+    "publishedDate": "2026-04",
+    "verifiedOn": "2026-10-30"
+  },
+  {
+    "id": "dicom-preprocessing",
+    "doi": "10.1007/978-981-92-5699-0_29",
+    "officialTitle": "Impact of DICOM Preprocessing Strategies on Chest X-Ray Abnormality Detection",
+    "authors": [
+      {
+        "name": "Thi-Bich-Tra Le"
+      },
+      {
+        "name": "Ngoc-Duy Le"
+      },
+      {
+        "name": "Tuan-Minh Do",
+        "isOwner": true
+      },
+      {
+        "name": "Trung-Nguyen Hoang"
+      },
+      {
+        "name": "Ly-Minh-Hoang Tran"
+      },
+      {
+        "name": "Thi-Thu-Hong Phan"
+      }
+    ],
+    "source": "https://doi.org/10.1007/978-981-92-5699-0_29",
+    "publishedDate": "2026-09-26",
+    "verifiedOn": "2026-10-30"
+  },
+  {
+    "id": "vietnamese-receipt-ocr",
+    "doi": "10.1007/978-3-032-33384-1_42",
+    "officialTitle": "Robustness and Vietnamese-Specific OCR Error Analysis on Receipt Images",
+    "authors": [
+      {
+        "name": "Tuan Minh Do",
+        "isOwner": true
+      },
+      {
+        "name": "Cong Tam Phan"
+      },
+      {
+        "name": "Ngoc Bao Quang Nguyen"
+      },
+      {
+        "name": "Luong Vuong Nguyen"
+      }
+    ],
+    "source": "https://doi.org/10.1007/978-3-032-33384-1_42",
+    "publishedDate": "2026-07-26",
+    "verifiedOn": "2026-10-30"
+  },
+  {
+    "id": "red-river-forecasting",
+    "doi": "10.1007/978-3-032-36547-7_5",
+    "officialTitle": "Comparative Study of Deep Learning Architectures for Water Level Forecasting in the Red River",
+    "authors": [
+      {
+        "name": "Tuan-Minh Do",
+        "isOwner": true
+      },
+      {
+        "name": "Ngoc-Bao-Quang Nguyen"
+      },
+      {
+        "name": "Cong-Tam Phan"
+      },
+      {
+        "name": "Thi-Thu-Hong Phan"
+      }
+    ],
+    "source": "https://doi.org/10.1007/978-3-032-36547-7_5",
+    "publishedDate": "2026-08-28",
+    "verifiedOn": "2026-10-30"
+  },
+  {
+    "id": "forecasting-losses",
+    "doi": "10.1109/ICAIDES67265.2025.11404066",
+    "officialTitle": "Comparative Analysis of Loss Functions in Deep Learning Models for Water Level Forecasting",
+    "authors": [
+      {
+        "name": "Tuan-Minh Do",
+        "isOwner": true
+      },
+      {
+        "name": "Ngoc-Bao-Quang Nguyen"
+      },
+      {
+        "name": "Cong-Tam Phan"
+      },
+      {
+        "name": "Thi-Thu-Hong Phan"
+      }
+    ],
+    "source": "https://doi.org/10.1109/ICAIDES67265.2025.11404066",
+    "publishedDate": "2025-12-11",
+    "verifiedOn": "2026-10-30"
+  }
+]

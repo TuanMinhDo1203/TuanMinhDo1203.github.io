@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tuanminhdo1203.github.io/sitemap.xml

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f7f4" />
+    <title>Tuan Minh Do — AI Research & Computer Vision</title>
+    <meta
+      name="description"
+      content="Tuan Minh Do's research portfolio: computer vision, low-light image restoration, document intelligence, and efficient AI. Final-year AI student at FPT University, Da Nang."
+    />
+    <link rel="canonical" href="https://tuanminhdo1203.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Tuan Minh Do — AI Research & Computer Vision"
+    />
+    <meta
+      property="og:description"
+      content="Research, made visible. Exploring intelligent vision systems, from image restoration to efficient deployment."
+    />
+    <meta property="og:url" content="https://tuanminhdo1203.github.io/" />
+    <meta name="twitter:card" content="summary" />
+    <script>
+      try {
+        const t = localStorage.getItem("theme");
+        document.documentElement.dataset.theme =
+          t === "dark" ||
+          (!t && matchMedia("(prefers-color-scheme: dark)").matches)
+            ? "dark"
+            : "light";
+      } catch {
+        document.documentElement.dataset.theme = matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches
+          ? "dark"
+          : "light";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
