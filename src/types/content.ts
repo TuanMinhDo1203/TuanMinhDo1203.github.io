@@ -1,3 +1,8 @@
+export interface ResearchMetric {
+  value: string;
+  label: string;
+  note?: string;
+}
 export interface PublicationAuthor {
   name: string;
   isOwner?: boolean;
@@ -16,7 +21,7 @@ export interface Publication {
   contribution?: {
     problem: string;
     method: string;
-    metrics: { value: string; label: string }[];
+    metrics: ResearchMetric[];
     context: string;
     figureKey: string;
     projectId?: string;
@@ -45,7 +50,7 @@ export interface Project {
   limitation?: string;
   tags: string[];
   url?: string;
-  metrics?: { value: string; label: string }[];
+  metrics?: ResearchMetric[];
 }
 export interface Profile {
   name: string;

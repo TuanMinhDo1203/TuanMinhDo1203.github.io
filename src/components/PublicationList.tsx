@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { ArrowUpRight, Award } from "lucide-react";
 import { publications } from "../data/publications";
 import { publicationMedia, selectedPublicationMedia } from "../data/media";
+import { ResearchResults } from "./ResearchResults";
 import { ResearchFigure } from "./ResearchFigure";
 import { SectionTitle, Reveal } from "./SectionLayout";
 export function PublicationList() {
@@ -158,14 +159,10 @@ export function PublicationList() {
                           <p>{contribution.method}</p>
                         </div>
                       </div>
-                      <dl className="contribution-metrics">
-                        {contribution.metrics.map((metric) => (
-                          <div key={metric.label}>
-                            <dt>{metric.label}</dt>
-                            <dd>{metric.value}</dd>
-                          </div>
-                        ))}
-                      </dl>
+                      <ResearchResults
+                        metrics={contribution.metrics}
+                        className="contribution-metrics"
+                      />
                       {(contribution.codeUrl || contribution.projectId) && (
                         <div className="contribution-links">
                           {contribution.projectId && (

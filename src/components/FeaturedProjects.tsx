@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { projects, otherProjects } from "../data/projects";
 import { projectMedia } from "../data/media";
+import { ResearchResults } from "./ResearchResults";
 import { ResearchFigure } from "./ResearchFigure";
 import { Reveal, SectionTitle } from "./SectionLayout";
 export function FeaturedProjects() {
@@ -63,14 +64,7 @@ export function FeaturedProjects() {
                 </div>
               )}
               {project.metrics && (
-                <div className="metrics">
-                  {project.metrics.map((metric) => (
-                    <div key={metric.label}>
-                      <strong>{metric.value}</strong>
-                      <span>{metric.label}</span>
-                    </div>
-                  ))}
-                </div>
+                <ResearchResults metrics={project.metrics} className="metrics" />
               )}
               {project.limitation && (
                 <p className="project-note">{project.limitation}</p>

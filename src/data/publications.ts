@@ -35,7 +35,13 @@ export const publications: Publication[] = [
         "Training physics-inspired low-light enhancement reliably across runs.",
       method:
         "Studied bounded transmission and controlled initialization of the final transmission head for CPGA.",
-      metrics: [{ value: "14.75 → 20.09 dB", label: "Mean PSNR" }],
+      metrics: [
+        {
+          value: "14.75 → 20.09 dB",
+          label: "Mean PSNR",
+          note: "LOLv1 · 6 seeds",
+        },
+      ],
       context:
         "LOLv1: mean PSNR across six evaluated seeds. The qualitative figure includes an example and a failure case; these results belong to CPGA-Stable, not the detector-aware capstone.",
       figureKey: "cpga-stable",
