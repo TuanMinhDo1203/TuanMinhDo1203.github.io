@@ -6,9 +6,9 @@ export const publications: Publication[] = [
     ...verifiedPublications["python-ocr"],
     contribution: {
       problem:
-        "Handwritten Python recognition must preserve indentation and code structure, not just individual characters.",
+        "Recognizing handwritten Python while preserving syntax and indentation.",
       method:
-        "Developed a multi-stage OCR pipeline combining line detection/classification, TrOCR recognition, and indentation-aware reconstruction.",
+        "Combined line detection/classification, TrOCR, and indentation-aware reconstruction in a multi-stage OCR pipeline.",
       metrics: [
         { value: "90.51%", label: "Line recovery" },
         { value: "27.01%", label: "Exact match" },
@@ -32,9 +32,9 @@ export const publications: Publication[] = [
     ...verifiedPublications["cpga-stable"],
     contribution: {
       problem:
-        "Optimization instability can make physics-inspired low-light enhancement difficult to train consistently.",
+        "Training physics-inspired low-light enhancement reliably across runs.",
       method:
-        "Studied bounded transmission and controlled initialization of the final transmission head to improve CPGA optimization stability.",
+        "Studied bounded transmission and controlled initialization of the final transmission head for CPGA.",
       metrics: [{ value: "14.75 → 20.09 dB", label: "Mean PSNR" }],
       context:
         "LOLv1: mean PSNR across six evaluated seeds. The qualitative figure includes an example and a failure case; these results belong to CPGA-Stable, not the detector-aware capstone.",

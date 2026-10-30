@@ -58,7 +58,7 @@ Add an object to `src/data/publications.ts`, using `Publication` in `src/types/c
 
 ### Projects
 
-Add a `Project` object to `src/data/projects.ts`: unique ID, title, category, status, problem, method, personal contribution, evidence, limitations, and tags. Optional `optimization` separates inference work from recognition; optional `evaluation` identifies distinct metric families. Core evidence always renders directly. `technicalNote` is reserved for genuinely supplemental context. Metrics require both values and precise labels. Repository links are optional. Featured layouts use `project-<id>` CSS classes; the capstone is a wide navy feature, OCR has evaluation metrics, and EdgePlant uses a quiet editorial treatment. Add a layout class when introducing a different visual composition.
+Add a `Project` object to `src/data/projects.ts`: unique ID, title, category, status, problem, method, personal contribution, optional scientific limitations, and tags. Verified results belong in precisely labeled `metrics`. Optional `optimization` separates inference work from recognition; optional `evaluation` identifies distinct metric families. Core evidence always renders directly. Metrics require both values and precise labels. Repository links are optional. Featured layouts use `project-<id>` CSS classes; the capstone is a wide navy feature, OCR has evaluation metrics, and EdgePlant uses a quiet editorial treatment. Add a layout class when introducing a different visual composition.
 
 ### Contact and biography
 
@@ -123,7 +123,14 @@ See [reference refinement](docs/reference-refinement.md) for the editorial refer
 
 The approved section order remains unchanged. Full-width surface bands, dividers, and numbered 01–05 headers separate the five major chapters; the research snapshot stays compact. Gallery thumbnails are bounded and uncropped, and the hero CTA reads View Publications. Seven official author lists are displayed with the owner's exact name variant emphasized. EIDT-SIMC has no speculative author line. See [V3 report](docs/v3-refinement.md) for source verification, files, and QA. Earlier reports describe their corresponding revisions; the V3 report is the current audit.
 
-
 ## Source material and public repository
 
 Local raw `images/`, the source CV at the repository root, generated exports, browser traces, and `node_modules` are excluded from Git. The approved web images, full-resolution image links, and real downloadable CV are included under `public/`. Original-image provenance is recorded in the data and audit files; local source paths describe the supplied material, while published copies are available under `public/research/originals/`.
+
+## Content-density and introduction refinement
+
+Experience now uses two contribution bullets per role without a repeated summary. The two publication spotlights retain recognition/PSNR evidence; the EXAM_OCR implementation card emphasizes the processing/review system and the separate OpenVINO CPU timing. Its recognition metrics remain visible in the related publication instead of repeating in both sections. The same OCR pipeline diagram remains available in its publication preview; the project retains the actual application screenshot. Project cards use intrinsic heights and contained image frames. All eight works, six honors, authentic figures, and approved section order are preserved.
+
+The displayed word count in Experience, Featured Research, and spotlight narratives decreased approximately 21% in this revision. Gallery frames were reduced from 240px to 200px on desktop while retaining click-to-expand original images. No new disclosure hides core research or awards. See `docs/content-density.md` for verification and scope.
+
+The latest introduction uses Inter consistently, a concise research summary, quieter social links, and the supplied ORCID in both Hero and Contact. The owner approved publishing this revision on 30 October 2026.

@@ -72,15 +72,9 @@ export function FeaturedProjects() {
                   ))}
                 </div>
               )}
-              <div className="project-evidence">
-                <p>
-                  <span>Evidence & status</span>
-                  {project.evidence}
-                </p>
-                {project.limitation && (
-                  <p className="project-caveat">{project.limitation}</p>
-                )}
-              </div>
+              {project.limitation && (
+                <p className="project-note">{project.limitation}</p>
+              )}
               {project.url && (
                 <a
                   href={project.url}
@@ -100,26 +94,9 @@ export function FeaturedProjects() {
                   Related APWeb-WAIM paper <ArrowUpRight size={15} />
                 </a>
               )}
-              {project.technicalNote && (
-                <details className="project-more">
-                  <summary>Deployment details</summary>
-                  <p>{project.technicalNote}</p>
-                </details>
-              )}
               {projectMedia[project.id] && (
                 <div className="project-gallery">
                   <ResearchFigure image={projectMedia[project.id][0]} />
-                  {projectMedia[project.id].length > 1 && (
-                    <div className="supplementary-figures">
-                      {projectMedia[project.id].slice(1).map((image) => (
-                        <ResearchFigure
-                          key={image.src}
-                          image={image}
-                          thumbnail
-                        />
-                      ))}
-                    </div>
-                  )}
                 </div>
               )}
             </Reveal>

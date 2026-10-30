@@ -60,13 +60,19 @@ test("research-first order and all core evidence are visible by default", async 
   ).toBeVisible();
   await expect(page.locator(".honor-terms li")).toHaveCount(4);
   await expect(page.locator(".evaluation-axes > div")).toHaveCount(3);
-  await expect(page.locator(".project-evidence")).toHaveCount(3);
-  await expect(page.locator(".metrics")).toContainText("90.51%");
-  await expect(page.locator(".metrics")).toContainText("27.01%");
+  await expect(page.locator(".experience-body ul")).toHaveCount(2);
+  for (const list of await page.locator(".experience-body ul").all())
+    await expect(list.locator("li")).toHaveCount(2);
+  await expect(
+    page.locator("#publication-python-ocr .contribution-metrics"),
+  ).toContainText("90.51%");
+  await expect(
+    page.locator("#publication-python-ocr .contribution-metrics"),
+  ).toContainText("27.01%");
   await expect(page.locator(".metrics")).toContainText("81.7 → 23.4s");
   expect(
     await page
-      .locator(".project-evidence, .project-research, .metrics")
+      .locator(".project-research, .metrics")
       .evaluateAll((elements) =>
         elements.every((element) => !element.closest("details")),
       ),
@@ -208,11 +214,14 @@ test("responsive layout, mobile navigation, and persistent dark mode", async ({
 }) => {
   for (const width of [320, 360, 390, 768, 1024, 1440]) {
     await page.setViewportSize({ width, height: 900 });
-    expect(
-      await page.evaluate(
-        () => document.documentElement.scrollWidth <= innerWidth,
-      ),
-    ).toBe(true);
+    // Resizing and web-font reflow can finish on the next rendering frame.
+    await expect
+      .poll(() =>
+        page.evaluate(
+          () => document.documentElement.scrollWidth <= innerWidth,
+        ),
+      )
+      .toBe(true);
   }
   await page.setViewportSize({ width: 390, height: 844 });
   const menu = page.getByRole("button", { name: "Open navigation" });

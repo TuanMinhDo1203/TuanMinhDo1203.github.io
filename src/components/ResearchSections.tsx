@@ -8,20 +8,14 @@ export function HeroSection() {
   return (
     <section id="home" className="hero container">
       <Reveal className="hero-copy">
-        <p className="eyebrow">COMPUTER VISION & EFFICIENT AI</p>
+        <p className="hero-intro">AI Research · FPT University, Da Nang</p>
         <h1>
           Tuan Minh Do<span className="name-period">.</span>
         </h1>
-        <h2>
-          From visual restoration
-          <br />
-          to efficient AI systems.
-        </h2>
         <p className="hero-summary">
-          Final-year AI student at FPT University, Da Nang, working across
-          computer vision, image restoration, document intelligence, and
-          efficient deep learning. I study models through downstream evaluation,
-          error analysis, and accuracy–efficiency trade-offs.
+          Final-year AI student working on computer vision, image restoration,
+          and document intelligence, with a focus on reliable and efficient
+          deep learning.
         </p>
         <div className="hero-buttons">
           <a href="#publications" className="button primary">
@@ -54,26 +48,32 @@ export function HeroSection() {
               <ArrowUpRight size={14} />
             </a>
           )}
+          {profile.orcid && (
+            <a href={profile.orcid} target="_blank" rel="noreferrer">
+              ORCID
+              <ArrowUpRight size={14} />
+            </a>
+          )}
         </div>
         <ul className="research-highlights" aria-label="Research record">
           <li>
             <strong>{publications.length}</strong>
             <div>
-              <span>listed research works</span>
-              <small>including accepted work</small>
+              <span>research works</span>
+              <small>published & accepted</small>
             </div>
           </li>
           <li>
             <strong>
               {publications.filter((p) => p.role === "First author").length}
             </strong>
-            <span>first-author works</span>
+            <span>first-author</span>
           </li>
           <li>
             <strong>
               {awards.filter((a) => a.group === "research").length}
             </strong>
-            <span>paper distinctions</span>
+            <span>paper awards</span>
           </li>
         </ul>
       </Reveal>
@@ -85,9 +85,6 @@ export function HeroSection() {
           height={media.portrait.height}
           fetchPriority="high"
         />
-        <p>
-          Tuan Minh Do <span>AI research & engineering</span>
-        </p>
       </Reveal>
     </section>
   );
@@ -149,6 +146,12 @@ export function AboutSection() {
                 {profile.linkedin && (
                   <a href={profile.linkedin} target="_blank" rel="noreferrer">
                     LinkedIn
+                    <ArrowUpRight size={14} />
+                  </a>
+                )}
+                {profile.orcid && (
+                  <a href={profile.orcid} target="_blank" rel="noreferrer">
+                    ORCID
                     <ArrowUpRight size={14} />
                   </a>
                 )}

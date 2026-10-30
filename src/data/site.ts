@@ -4,6 +4,7 @@ export const profile: Profile = {
   github: "https://github.com/TuanMinhDo1203",
   email: "tuanminhdo1203@gmail.com",
   linkedin: "https://www.linkedin.com/in/tuan-minh-do-1755a52b8/",
+  orcid: "https://orcid.org/0009-0007-6965-0502",
   cv: "/DoTuanMinh_CV.pdf",
 };
 export const navigation = [

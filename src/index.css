@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=IBM+Plex+Mono:wght@400;450;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;450;500&family=Inter:wght@400;450;500;550;600;650;700&display=swap");
 @import "tailwindcss";
 :root {
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--sans);
   color: #15191f;
   background: #f7f7f4;
   font-synthesis: none;
@@ -14,6 +14,7 @@
   --line: #dcdedb;
   --accent: #345bce;
   --wash: #eef1f7;
+  --sans: "Inter", system-ui, sans-serif;
   --mono: "IBM Plex Mono", monospace;
   color-scheme: light;
 }
@@ -1405,7 +1406,7 @@ button {
   align-items: flex-start;
 }
 .award .award-detail {
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--sans);
   margin: 14px 0 0;
   font-size: 15px;
   line-height: 1.7;
@@ -1624,7 +1625,7 @@ summary:focus-visible {
   border-top: 0;
 }
 .research-figure figcaption {
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--sans);
   font-size: 13px;
 }
 .publication {
@@ -3016,5 +3017,179 @@ main > .section {
   }
   .expertise-card {
     padding-block: 20px;
+  }
+}
+
+/* Lighter copy and intrinsic card heights keep implementation work easy to scan. */
+.projects-grid {
+  align-items: start;
+}
+.project:not(.project-lowlight) .project-research {
+  gap: 18px;
+}
+.project-note {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+.project-lowlight .project-note {
+  color: #c3cee1;
+}
+.project-ocr .metrics {
+  display: flex;
+  gap: 24px;
+  margin-block: 20px;
+}
+.project:not(.project-lowlight)
+  .project-gallery
+  > .research-figure
+  .figure-trigger {
+  height: 210px;
+  background: white;
+}
+.project:not(.project-lowlight)
+  .project-gallery
+  > .research-figure
+  .figure-trigger
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.experience-body ul {
+  margin-top: 14px;
+}
+.experience-item {
+  padding-block: 26px;
+}
+.expertise-card {
+  padding-block: 20px;
+}
+.award-moments .award-gallery {
+  max-width: 880px;
+  gap: 18px 22px;
+}
+.award-moments .figure-trigger {
+  height: 200px;
+}
+@media (max-width: 760px) {
+  .project:not(.project-lowlight)
+    .project-gallery
+    > .research-figure
+    .figure-trigger {
+    height: 180px;
+  }
+  .award-moments .figure-trigger {
+    height: 200px;
+  }
+  .experience-item {
+    padding-block: 24px;
+  }
+}
+.project:not(.project-lowlight) .project-top .project-status {
+  max-width: none;
+  text-align: left;
+  flex-shrink: 1;
+}
+
+/* A single type family and a compact introduction establish a clear first view. */
+.hero {
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 80px;
+  padding-block: 64px 48px;
+}
+.hero-intro {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 500;
+  color: var(--muted);
+}
+.hero h1 {
+  font-family: var(--sans);
+  font-size: clamp(44px, 4.5vw, 64px);
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  line-height: 1.12;
+  margin: 16px 0 0;
+}
+.hero-summary {
+  max-width: 550px;
+  margin: 22px 0 0;
+  font-size: 18px;
+  line-height: 1.75;
+}
+.hero-buttons {
+  margin-top: 28px;
+}
+.hero-socials {
+  margin-top: 18px;
+  gap: 20px;
+}
+.hero-socials a {
+  color: var(--muted);
+}
+.hero-socials a:hover {
+  color: var(--accent);
+}
+.hero-portrait {
+  width: 340px;
+}
+.hero-portrait img {
+  height: 390px;
+}
+.research-highlights {
+  margin-top: 28px;
+  padding-top: 18px;
+}
+.section-heading h2 {
+  font-family: var(--sans);
+  font-weight: 500;
+}
+@media (max-width: 1100px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 40px;
+  }
+  .hero-portrait {
+    width: 300px;
+  }
+}
+@media (max-width: 760px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+    padding-block: 24px 32px;
+  }
+  .hero-portrait {
+    width: 100%;
+  }
+  .hero-portrait img {
+    height: 260px;
+  }
+  .hero-intro {
+    font-size: 13px;
+  }
+  .hero h1 {
+    font-size: clamp(38px, 10vw, 48px);
+    margin-top: 12px;
+  }
+  .hero-summary {
+    font-size: 16px;
+    margin-top: 18px;
+  }
+  .hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 22px;
+  }
+  .hero-buttons .button {
+    padding-inline: 14px;
+    font-size: 14px;
+  }
+  .hero-socials {
+    gap: 16px;
   }
 }

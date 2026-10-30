@@ -8,9 +8,8 @@ export const experience: Experience[] = [
     summary:
       "Connecting enterprise applications with document AI and assisted workflows.",
     contributions: [
-      "Worked with OutSystems Developer Cloud on business workflows, data modeling, and application logic.",
-      "Explored Azure AI Document Intelligence custom extraction, from document labeling to model training and testing.",
-      "Gained hands-on experience with API integration, chatbots, and AI-assisted automation.",
+      "Worked on OutSystems ODC workflows, data models, application logic, and API integrations for AI-assisted applications.",
+      "Explored Azure AI Document Intelligence custom extraction through document labeling, model training, and testing.",
     ],
     tags: [
       "OutSystems ODC",
@@ -26,9 +25,8 @@ export const experience: Experience[] = [
     summary:
       "Building components for structured document reconstruction and OCR workflows.",
     contributions: [
-      "Developed OCR post-processing modules that reconstruct DOCX and HTML documents from JSON while preserving layout.",
-      "Prepared Vietnamese document datasets for VietOCR fine-tuning, evaluation, and error analysis.",
-      "Supported distributed inference and contributed logging, monitoring, table-layout detection, and asynchronous processing components alongside senior engineers.",
+      "Developed layout-preserving OCR JSON → DOCX/HTML reconstruction and prepared Vietnamese datasets for VietOCR fine-tuning, evaluation, and error analysis.",
+      "Contributed to table-layout detection, distributed/asynchronous inference, and logging/monitoring with senior engineers using Docker, Redis, and RabbitMQ.",
     ],
     tags: ["VietOCR", "Document reconstruction", "Docker", "Redis / RabbitMQ"],
   },
@@ -37,25 +35,24 @@ export const skillGroups = [
   {
     label: "Computer Vision & Deep Learning",
     description:
-      "Image restoration, object detection, and comparative model evaluation.",
+      "Image restoration, object detection, and comparative evaluation.",
     tools: "PyTorch · TensorFlow · OpenCV · YOLO",
   },
   {
     label: "Document AI",
     description:
-      "Handwritten code recognition, structured reconstruction, and OCR error analysis.",
+      "Handwritten OCR, structured reconstruction, and error analysis.",
     tools: "TrOCR · VietOCR · Azure AI Document Intelligence",
   },
   {
     label: "Model Optimization & Deployment",
-    description:
-      "Inference conversion and optimization across CPU and edge targets.",
+    description: "Model conversion and inference optimization for CPU/edge.",
     tools: "OpenVINO · ONNX Runtime · Qualcomm QNN",
   },
   {
     label: "ML Systems & Experimentation",
     description:
-      "Controlled experiments, ablations, evaluation workflows, and asynchronous inference.",
+      "Ablations, benchmarking, and asynchronous inference workflows.",
     tools: "Python · FastAPI · Docker · Redis / Celery",
   },
 ];

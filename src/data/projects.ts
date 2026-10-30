@@ -10,9 +10,7 @@ export const projects: Project[] = [
     method:
       "Exploring Retinexformer, lightweight architectures, knowledge distillation / PKD, and detector-aware optimization.",
     contribution:
-      "Investigating detector-aware optimization and lightweight enhancement in FPT University capstone research.",
-    evidence:
-      "Ongoing research; final experimental results are not yet available.",
+      "Studying how detector-aware optimization and distillation affect downstream detection, restoration fidelity, and computational cost.",
     evaluation: [
       { label: "Enhancement quality", metrics: "PSNR · SSIM · LPIPS" },
       { label: "Detection performance", metrics: "mAP" },
@@ -21,8 +19,7 @@ export const projects: Project[] = [
         metrics: "Parameters · MACs · Inference latency",
       },
     ],
-    limitation:
-      "The pipeline illustration describes the research workflow, not a final benchmark or a verified deployment.",
+    limitation: "Ongoing evaluation; final benchmark results are pending.",
     tags: ["Image restoration", "Knowledge distillation", "Efficient vision"],
   },
   {
@@ -31,40 +28,27 @@ export const projects: Project[] = [
     category: "DOCUMENT INTELLIGENCE",
     status: "Research project",
     problem:
-      "Recognizing handwritten Python code in academic examinations while preserving its structure.",
+      "Turning handwritten exam submissions into reviewable Python code.",
     method:
-      "Line detection and classification, TrOCR recognition, and indentation-aware code reconstruction.",
+      "TrOCR and indentation reconstruction, with asynchronous FastAPI/Celery processing, Redis, Azure SQL/Blob storage, and Docker; PyTorch-to-OpenVINO CPU inference.",
     limitation:
-      "Recognition errors remain the main end-to-end bottleneck, particularly where symbols and indentation determine code correctness.",
-    optimization:
-      "PyTorch-to-OpenVINO optimization for CPU inference, evaluated separately from recognition quality.",
+      "Syntax-sensitive recognition remains the main end-to-end bottleneck.",
     contribution:
-      "Developed the end-to-end recognition platform and analyzed component-level errors and accuracy–latency trade-offs.",
-    evidence:
-      "End-to-end evaluation combines line recovery and exact code match; OpenVINO optimization reduces CPU inference time from 81.7s to 23.4s.",
+      "Built the recognition platform and teacher-review workflow; analyzed component errors and accuracy–latency trade-offs.",
     tags: ["TrOCR", "OpenVINO", "Handwritten code"],
     url: "https://github.com/TuanMinhDo1203/EXAM_OCR",
-    metrics: [
-      { value: "90.51%", label: "Line recovery" },
-      { value: "27.01%", label: "Exact match" },
-      { value: "81.7 → 23.4s", label: "CPU inference time" },
-    ],
+    metrics: [{ value: "81.7 → 23.4s", label: "CPU inference time" }],
   },
   {
     id: "edge",
     title: "EdgePlant",
     category: "ON-DEVICE COMPUTER VISION",
     status: "Deployment contribution · Aug 2026",
-    problem:
-      "Bringing agricultural disease detection to the Qualcomm QCS8550 edge platform.",
+    problem: "Agricultural disease detection on Qualcomm QCS8550.",
     method:
-      "YOLO11x converted from PyTorch through ONNX to Qualcomm QNN, using W8A16 quantization on QCS8550.",
+      "YOLO11x exported from PyTorch through ONNX to Qualcomm QNN, with W8A16 quantization on the QCS8550 Hexagon NPU.",
     contribution:
-      "Contributed model conversion, quantization, and hardware-accelerated edge deployment optimization.",
-    evidence:
-      "Model conversion, quantized execution, and hardware-accelerated inference on Qualcomm QCS8550.",
-    technicalNote:
-      "A 116-class YOLO11x model, converted through ONNX to Qualcomm QNN with W8A16 quantization, runs through the QNN runtime / HTP path on the QCS8550 Hexagon NPU.",
+      "Contributed model export, quantization, QNN runtime integration, and hardware-accelerated HTP inference for a 116-class agricultural detector.",
     tags: ["YOLO11x", "Qualcomm QNN", "W8A16"],
   },
 ];

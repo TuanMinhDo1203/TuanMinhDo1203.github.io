@@ -39,7 +39,6 @@ export interface Project {
   problem: string;
   method: string;
   contribution: string;
-  evidence: string;
   optimization?: string;
   technicalNote?: string;
   evaluation?: { label: string; metrics: string }[];
@@ -54,6 +53,7 @@ export interface Profile {
   email?: string;
   scholar?: string;
   linkedin?: string;
+  orcid?: string;
   cv?: string;
 }
 export interface ResearchImage {

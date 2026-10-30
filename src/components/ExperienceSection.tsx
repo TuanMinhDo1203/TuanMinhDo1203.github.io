@@ -29,7 +29,6 @@ export function ExperienceSection() {
               </div>
               <div className="experience-body">
                 <h4>{item.role}</h4>
-                <p>{item.summary}</p>
                 <ul>
                   {item.contributions.map((text) => (
                     <li key={text}>{text}</li>
